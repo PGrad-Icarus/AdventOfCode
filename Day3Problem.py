@@ -15,7 +15,7 @@ def checkInSet(tup,homes,numHomes):
 		numHomes += 1
 	return homes,numHomes
 
-def numHousesReceiveAtLOnePresent(string,numSantas):
+def numHousesReceiveAtLOnePresent(string,numSantas): #Generalizing the Santa(s) problem for any given number of Santas, given that number is a divisor of the total number of moves.
 	if(len(string) % numSantas != 0): 
 		raise ValueError("Every Santa must get the same number of moves.")
 	point = [[0,0] for k in range(numSantas)]
